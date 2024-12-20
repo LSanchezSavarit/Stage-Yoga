@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", serif;
+  color: #2c3639;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: "Urbanist", serif;
+  color: #1d3557;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.presentation {
+  background-color: #e8f1f2;
+  padding: 80px 20px;
+}
+
+.presentation .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.presentation-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.presentation-text {
+  flex: 1;
+  text-align: left;
+}
+
+.presentation h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.localisation {
+  background-color: #fff;
+}
+
+.localisation-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.localisation-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.localisation-details {
+  flex: 1;
+  text-align: left;
+}
+
+.programme ul {
+  list-style: none;
+  padding: 0;
+}
+
+.programme {
+  background-color: #f7f9f9;
+}
+
+.programme li {
+  background-color: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid #457b9d;
+  border-radius: 5px;
+}
+
+.inscription {
+  background-color: #e8f1f2;
+}
+
+.btn-inscription {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #457b9d;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-inscription:hover {
+  background-color: #1d3557;
+}
+
+header {
+  background-color: #1d3557;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  font-family: "Urbanist", serif;
+  font-size: 2em;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #7cb6db;
+}
+/* Footer */
+footer {
+  background-color: #1d3557;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #a8dadc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.button-6 {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .presentation .container,
+  .localisation-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .presentation-text,
+  .localisation-details {
+    text-align: center;
+  }
+
+  .presentation-image,
+  .localisation-image {
+    max-width: 100%;
+  }
+
+  .presentation h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .btn-inscription {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+
+  .programme li {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .button-6 {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1em;
+  }
+}
