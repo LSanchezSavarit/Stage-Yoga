@@ -1,3 +1,9 @@
+:root {
+  --beige-clair: #f4e7c5;
+  --beige-fonce: #e5d4a9;
+  --marron: #7b440c;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,7 +13,7 @@ body {
   padding: 0;
   font-family: "Ubuntu", serif;
   color: #2c3639;
-  background-color: #fafafa;
+  background-color: var(--beige-fonce);
   line-height: 1.6;
 }
 
@@ -15,6 +21,10 @@ h1,
 h2 {
   font-family: "Urbanist", serif;
   color: #1d3557;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 section {
@@ -28,7 +38,7 @@ section {
 }
 
 .presentation {
-  background-color: #e8f1f2;
+  background-color: var(--beige-clair);
   padding: 80px 20px;
 }
 
@@ -56,7 +66,7 @@ section {
 }
 
 .localisation {
-  background-color: #fff;
+  background-color: var(--beige-clair);
 }
 
 .localisation-content {
@@ -77,44 +87,12 @@ section {
   text-align: left;
 }
 
-.programme ul {
-  list-style: none;
-  padding: 0;
-}
-
-.programme {
-  background-color: #f7f9f9;
-}
-
-.programme li {
-  background-color: #fff;
-  padding: 15px;
-  margin: 10px 0;
-  border-left: 5px solid #457b9d;
-  border-radius: 5px;
-}
-
 .inscription {
-  background-color: #e8f1f2;
-}
-
-.btn-inscription {
-  display: inline-block;
-  padding: 15px 30px;
-  background-color: #457b9d;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.btn-inscription:hover {
-  background-color: #1d3557;
+  background-color: var(--beige-clair);
 }
 
 header {
-  background-color: #1d3557;
+  background-color: var(--marron);
   padding: 20px 0;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
@@ -151,18 +129,18 @@ header {
 }
 
 .nav-links a:hover {
-  color: #7cb6db;
+  color: var(--beige-clair);
 }
 /* Footer */
 footer {
-  background-color: #1d3557;
+  background-color: var(--marron);
   color: #fff;
   text-align: center;
   padding: 20px 0;
 }
 
 footer a {
-  color: #a8dadc;
+  color: var(--beige-clair);
   text-decoration: none;
   font-weight: bold;
 }
@@ -219,6 +197,75 @@ footer a:hover {
   transform: translateY(0);
 }
 
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center; /* To vertically center align items in each row */
+}
+
+.image-left,
+.image-right {
+  flex-basis: 30%; /* Reduced from 45% to 30% */
+}
+
+.text-right,
+.text-left {
+  flex-basis: 65%; /* Adjusted to occupy remaining space */
+  text-align: left;
+}
+
+.image-left img,
+.image-right img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.image-right {
+  order: 2;
+}
+
+.text-left {
+  order: 1;
+}
+
+.yoga-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.yoga-table thead th {
+  background-color: var(--marron);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: left;
+}
+
+.yoga-table tbody td {
+  border: 2px solid #ffffff;
+  padding: 12px;
+  text-align: left;
+}
+
+.yoga-table tbody tr:nth-child(even) {
+  background-color: var(--beige-clair);
+}
+
+.yoga-table tbody td:first-child {
+  font-weight: bold;
+}
+
+.yoga-table thead th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+.yoga-table thead th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -253,12 +300,6 @@ footer a:hover {
 
   section {
     padding: 40px 15px;
-  }
-
-  .btn-inscription {
-    width: 100%;
-    text-align: center;
-    padding: 12px;
   }
 
   .programme li {
