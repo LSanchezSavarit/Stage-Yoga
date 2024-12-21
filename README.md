@@ -1,5 +1,7 @@
 ## A faire:
 
+[Voir le site](https://lsanchezsavarit.github.io/Stage-Yoga/)
+
 - changer les photos dans le dossier "image"
 
   - penser à bien conserver les mêmes noms de fichiers (exemple : `auriane.png` doit rester `auriane.png`)
