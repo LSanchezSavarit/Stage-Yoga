@@ -1,8 +1,9 @@
 :root {
-  --couleur1: #b0433b;
+  --couleur1: #fea31c;
   --couleur2: #ec703e;
   --couleur3: #ffb351;
 }
+
 html {
   scroll-behavior: smooth;
 }
